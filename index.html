@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Universe</title>
+    <!-- TailWind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome -->
+
+    <script src="https://kit.fontawesome.com/9a1677510c.js" crossorigin="anonymous"></script>
+    <style>
+        #pricing-div #price:nth-child(1) {
+            color: green;
+        }
+
+        #pricing-div #price:nth-child(2) {
+            color: orange;
+        }
+
+        #pricing-div #price:nth-child(3) {
+            color: red;
+        }
+    </style>
+</head>
+
+<body class="lg:w-10/12 mx-auto">
+    <header class="text-center">
+        <h1 class="text-4xl py-7">AI Universe Hub</h1>
+        <button class="bg-[#EB5757] text-white font-medium text-lg px-4 py-3 rounded-xl" id="sort-btn">
+            Sort By Date
+        </button>
+    </header>
+
+    <main>
+        <!-- Card Section -->
+        <section id="card-container" class="lg:grid grid-cols-3 py-8 gap-12 lg:space-y-0  space-y-6"></section>
+
+        <section id="see-more-btn" class="text-center py-7">
+            <button id="see-more-btn" class="bg-[#EB5757] text-white font-medium text-lg px-4 py-3 rounded-xl">
+                See More
+            </button>
+        </section>
+        <!-- Modal -->
+        <section class="modal-wrapper"></section>
+    </main>
+
+    <!-- JS Scripts -->
+    <script src="js/universe.js"></script>
+</body>
+
+</html>
